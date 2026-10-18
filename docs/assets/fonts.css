@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'Belleza';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(Belleza.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Italiana';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(Italiana.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Newsreader';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(Newsreader.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Ysabeau';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(Ysabeau.ttf) format('truetype');
+}
