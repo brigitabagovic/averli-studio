@@ -1,0 +1,68 @@
+{
+  "brand": "AVERLI",
+  "descriptor": "STUDIO",
+  "email": "brigita.bagovic@gmail.com",
+  "tagline": "Design. Digital. A clearer direction.",
+  "intro": "From brand identity to social content and digital campaigns, AVERLI connects how a brand looks, what it says, and how it reaches the right audience.",
+  "hero": {
+    "image": "assets/hero-laptop.png",
+    "video": "/averli-studio/assets/hero-video.mp4",
+    "poster": "/averli-studio/assets/hero-video-poster.webp",
+    "videoTranscript": [
+      "Business owner: I keep asking myself… What should my business be doing online?",
+      "AI Assistant: What are you doing online right now?",
+      "Business owner: Website, Instagram, ads… I’m just not sure what’s working.",
+      "AI Assistant: It sounds like you need more structure.",
+      "Business owner: Okay… like what?",
+      "AI Assistant: One system where design, digital and marketing works as one.",
+      "AVERLI STUDIO. Ups… You’re already here."
+    ],
+    "wordmarkFont": "Italiana",
+    "dialogue": [
+      {"role": "user", "text": "I keep asking myself… what should my business actually be doing online?"},
+      {"role": "assistant", "text": "What are you doing online right now?"},
+      {"role": "user", "text": "Website, Instagram, ads… I’m just not sure what’s working."},
+      {"role": "user", "text": "Okay… like what?"},
+      {"role": "assistant", "text": "It sounds like you need more structure."},
+      {"role": "assistant", "text": "One system where design, digital and marketing work as one."}
+    ],
+    "reveal": "You’re already here."
+  },
+  "projects": [
+    {
+      "id": "villa-unuk", "name": "Villa Unuk", "category": "Editorial & print design", "year": "2024",
+      "summary": "Architecture, translated into print.",
+      "description": "An editorial sales brochure for a residential development in Primošten. Architectural imagery, carefully paced layouts, and clear information bring the property’s character onto the page.",
+      "scope": ["Brochure design", "Editorial layout", "Print design"],
+      "cover": "assets/villa-unuk-1.jpg",
+      "images": ["assets/villa-unuk-1.jpg", "assets/villa-unuk-2.jpg", "assets/villa-unuk-3.jpg", "assets/villa-unuk-4.jpg"]
+    },
+    {
+      "id": "legame", "name": "Legame", "category": "Brand identity", "year": "2023",
+      "summary": "An identity for keeping what matters.",
+      "description": "A typographic identity for an artisanal photobook brand. Inspired by the Italian word for ‘bond’, the logotype brings a quiet, considered detail to the act of preserving memories.",
+      "scope": ["Logotype", "Visual identity", "Brand application"],
+      "cover": "assets/legame-1.jpg",
+      "images": ["assets/legame-1.jpg", "assets/legame-2.jpg", "assets/legame-3.jpg"]
+    },
+    {
+      "id": "lastavica", "name": "Lastavica Cruising", "category": "Social media & content", "year": "2023",
+      "summary": "A considered presence, on and off the water.",
+      "description": "Creative direction and social media design for an Adriatic yacht charter. A cohesive visual language and content plan connect the atmosphere of the experience with its digital presence.",
+      "scope": ["Creative direction", "Social media design", "Content planning"],
+      "cover": "assets/lastavica-1.png",
+      "images": ["assets/lastavica-1.png", "assets/lastavica-2.jpg", "assets/lastavica-3.png", "assets/lastavica-4.png"]
+    }
+  ],
+  "services": [
+    {"title": "Brand & digital design", "description": "A visual language that feels like your business, wherever it appears.", "items": ["Brand identity & visual systems", "Campaign creative & brand assets", "Digital & print layouts", "Website & landing page design"]},
+    {"title": "Social media & content", "description": "A consistent presence, with a reason behind every piece of content.", "items": ["Social visuals & content design", "Content planning & creative direction", "Reels & short-form video", "Campaign content"]},
+    {"title": "Digital marketing", "description": "Creative work connected to a practical plan for reaching people.", "items": ["Meta campaign planning & setup", "Audience & budget planning", "Creative testing & campaign support", "Campaign reporting"]}
+  ],
+  "about": {
+    "heading": "A design eye.\nA marketing mindset.",
+    "text": "AVERLI is an independent brand, design, and marketing studio. Built on a background in graphic and digital design, with hands-on experience in content, campaign creative, and marketing coordination.",
+    "second": "The approach is connected from the start: understand the business, find a clear visual direction, then carry it through the places people actually encounter the brand. One thoughtful point of contact, from the first conversation to the final detail."
+  },
+  "sectionOrder": ["hero", "work", "services", "approach", "about", "contact"]
+}
