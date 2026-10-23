@@ -1170,7 +1170,7 @@ function setPageMeta(m){
 
   const FAQ=[
     ['What can AVERLI help me with?','AVERLI works across social media and content, campaigns and Meta advertising, SEO and digital marketing, and branding and graphic design. That can mean content planning and creation, Facebook and Instagram campaigns, search visibility and online presence, visual identities or design for digital and print.'],
-    ['Can I book just one service?','Yes. Some projects need one specific deliverable, while others benefit from a combination of services. The scope is shaped around what makes sense for your business.'],
+    ['Can I book just one service?','Absolutely. You can choose a single service or combine several, depending on what your brand needs. There’s no fixed package — we’ll shape the approach around your goals.'],
     ['Do I need to have a clear brief?','Not at all. A general idea, a challenge or even a question is enough to start the conversation. We can define the direction and requirements together.'],
     ['How does a project begin?','Start by sending an inquiry through the '+lnk('/contact','Contact page')+'. We’ll discuss your business, goals and what you need, then define a suitable scope and next steps.'],
     ['How is pricing determined?','Pricing depends on the services, complexity, deliverables and timeline involved. The proposed scope and cost are discussed before work begins.'],
