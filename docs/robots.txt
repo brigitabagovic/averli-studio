@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://brigitabagovic.github.io/averli-studio/sitemap.xml
+Sitemap: https://averlistudio.com/sitemap.xml

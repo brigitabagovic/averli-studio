@@ -1,12 +1,12 @@
 (() => {
   const reduced=matchMedia('(prefers-reduced-motion: reduce)');
   const mounted=new Map();
-  let settings={video:'/averli-studio/assets/hero-video.mp4',poster:'/averli-studio/assets/hero-video-poster.webp',transcript:[]};
+  let settings={video:'/assets/hero-video.mp4',poster:'/assets/hero-video-poster.webp',transcript:[]};
   const label=(button,text)=>{button.textContent=text;button.setAttribute('aria-label',text+' hero film');};
   function mount(section){
     if(mounted.has(section))return;
     const film=document.createElement('div');film.className='averli-hero-film';film.dataset.averliFilm='';
-    const video=document.createElement('video');video.className='averli-hero-video';video.muted=true;video.defaultMuted=true;video.playsInline=true;video.preload='metadata';video.poster=settings.poster;video.setAttribute('aria-label','AVERLI studio introduction, shown on a laptop');video.setAttribute('playsinline','');
+    const video=document.createElement('video');video.className='averli-hero-video';video.muted=true;video.loop=true;video.defaultMuted=true;video.playsInline=true;video.preload='metadata';video.poster=settings.poster;video.setAttribute('aria-label','AVERLI studio introduction, shown on a laptop');video.setAttribute('playsinline','');
     const source=document.createElement('source');source.src=settings.video;source.type='video/mp4';video.append(source);
     const controls=document.createElement('div');controls.className='averli-film-controls';
     const caption=document.createElement('span');caption.className='averli-film-caption';caption.textContent='Design · Social · Performance';
@@ -37,5 +37,5 @@
   }
   let scheduled=false;
   const observer=new MutationObserver(()=>{if(!scheduled){scheduled=true;requestAnimationFrame(()=>{scheduled=false;update();});}});
-  fetch('/averli-studio/content.json').then(r=>r.ok?r.json():null).then(content=>{if(content?.hero?.video)settings={video:content.hero.video,poster:content.hero.poster||settings.poster,transcript:content.hero.videoTranscript||[]};}).catch(()=>{}).finally(()=>{observer.observe(document.documentElement,{childList:true,subtree:true});update();});
+  fetch('/content.json').then(r=>r.ok?r.json():null).then(content=>{if(content?.hero?.video)settings={video:content.hero.video,poster:content.hero.poster||settings.poster,transcript:content.hero.videoTranscript||[]};}).catch(()=>{}).finally(()=>{observer.observe(document.documentElement,{childList:true,subtree:true});update();});
 })();
