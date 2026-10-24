@@ -983,11 +983,11 @@ function setPageMeta(m){
       const cta2=cta||f.querySelector('.framer-aqbm0g-container a');
       if(cta2){if(cta2.getAttribute('href')!==CONTACT_PATH)cta2.setAttribute('href',CONTACT_PATH);cta2.dataset.ctNav='/contact';}
     });
-    const navC=[...document.querySelectorAll('nav a')].find(a=>/^contact$/i.test(a.textContent.trim()));
-    if(navC){
+    // the nav link's text node carries extra rolling-text markup, so match on its first word (desktop bar and mobile menu both)
+    [...document.querySelectorAll('nav a')].filter(a=>/^contact(\s|$)/i.test(a.textContent.trim())).forEach(navC=>{
       if(navC.getAttribute('href')!==CONTACT_PATH)navC.setAttribute('href',CONTACT_PATH);navC.dataset.ctNav='/contact';
       navC.classList.toggle('averli-current',isContact());
-    }
+    });
   }
   function anchors(){
     if(!isHome())return;
