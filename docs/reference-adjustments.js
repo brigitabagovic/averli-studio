@@ -745,7 +745,7 @@ if(!ACKITCHEN_PAGE_READY)document.addEventListener('click',e=>{const a=e.target.
     const full=h.textContent.replace(/\s+/g,' ').trim();
     h.setAttribute('aria-label',full);
     h.classList.add('ct-ready');
-    h.innerHTML='<span class="ct-wrap" aria-hidden="true">'+tok('CREATIVE INVESTIGATIONS')+tok('  //  ')+'<span class="ct-grp">'+tok('SOCIAL')+sep+tok('CAMPAIGNS')+sep+tok('SEO')+sep+tok('DESIGN')+'</span>'+'</span>';
+    h.innerHTML='<span class="ct-wrap" aria-hidden="true">'+tok('CREATIVE INVESTIGATIONS')+tok('  //  ')+'<span class="ct-grp">'+tok('SOCIAL CAMPAIGNS')+sep+tok('SEO')+sep+tok('DESIGN')+'</span>'+'</span>';
     const w=h.firstChild,ts=[...w.querySelectorAll('.ct-t')];
     if(reduced||played){ts.forEach(t=>t.classList.add('on'));return}
     played=true;
