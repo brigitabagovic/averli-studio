@@ -924,3 +924,7 @@ main.wk-main>.framer-jdylyk{display:none!important}
 
 /* Contact: the divider above "Prefer to reach out directly?" uses the same line as the textarea underline */
 .ct-direct{border-top:1px solid #8a8a8a}
+
+/* Project-focus row: a 3-line value is taller than the 66px row and was clipped at the top; let it show */
+.framer-x4v1be-container .framer-YviN2{overflow:visible!important}
+.framer-x4v1be-container .framer-zqvrel{overflow:visible!important}
