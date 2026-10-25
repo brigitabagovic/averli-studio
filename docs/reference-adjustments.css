@@ -804,7 +804,7 @@ main.wk-main>.framer-jdylyk{display:none!important}
 .wk-in{padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.2)}
 .wk-k{margin:0;font-size:13px;line-height:17px;letter-spacing:1.2px;text-transform:uppercase;color:#BCBCBC}
 .wk-row{margin-top:44px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:64px;align-items:end}
-.wk-h{margin:0;font-size:clamp(72px,13vw,200px);line-height:.86;font-weight:300;letter-spacing:-.025em;text-transform:uppercase;color:#F8F6F1}
+.wk-h{margin:0;font-size:clamp(56px,9.6vw,160px);line-height:.86;font-weight:300;letter-spacing:-.025em;text-transform:uppercase;color:#F8F6F1}
 .wk-s{margin:0;font-size:clamp(24px,2.6vw,38px);line-height:1.1;font-weight:300;letter-spacing:.01em;text-transform:uppercase;color:#F8F6F1;text-wrap:balance}
 .wk-p{margin:26px 0 0;max-width:520px;font-size:16px;line-height:23px;letter-spacing:.2px;color:#BCBCBC}
 .wk-go{display:inline-block;margin-top:64px;font-size:13px;line-height:17px;letter-spacing:1.4px;text-transform:uppercase;color:#F8F6F1;text-decoration:none;padding-bottom:4px;border-bottom:1px solid rgba(255,255,255,.35);transition:border-color .25s,color .25s}
@@ -819,7 +819,7 @@ main.wk-main>.framer-jdylyk{display:none!important}
  .wk-intro{padding:118px 20px 0}
  .wk-in{padding-bottom:32px}
  .wk-row{display:block;margin-top:30px}
- .wk-h{font-size:clamp(84px,27vw,130px)}
+ .wk-h{font-size:clamp(48px,17.5vw,130px)}
  .wk-r{margin-top:34px}
  .wk-p{margin-top:20px}
  .wk-go{margin-top:40px}

@@ -852,10 +852,10 @@ if(!ACKITCHEN_PAGE_READY)document.addEventListener('click',e=>{const a=e.target.
 (()=>{
   const A='/assets/';
   const STEPS=[
-    {img:A+'averli-gyalaktika/00-home-cover-wide.webp',w:1672,h:941,alt:'Gyalaktika Zagreb: three smartphones showing the Meta ad creatives',cap:'Gyalaktika Zagreb / Selected work'},
-    {img:A+'ackitchen/ackitchen-cover.webp',w:1672,h:941,alt:'ACKitchen: four vertical social media compositions',cap:'ACKitchen / Selected work'},
-    {img:A+'vitality-bloom/vitality-bloom-cover.webp',w:1536,h:1024,alt:'Vitality Bloom: Radiance Collagen Powder packaging on a stone surface',cap:'Vitality Bloom / Selected work'},
-    {img:A+'villa-unuk/villa-unuk-cover.jpg',w:2048,h:1152,alt:'Villa Unuk: brochure spreads mockup',cap:'Villa Unuk / Selected work'}];
+    {img:A+'averli-gyalaktika/00-home-cover-wide.webp',w:1672,h:941,alt:'Gyalaktika Zagreb: three smartphones showing the Meta ad creatives',cap:'Gyalaktika Zagreb / Selected project'},
+    {img:A+'ackitchen/ackitchen-cover.webp',w:1672,h:941,alt:'ACKitchen: four vertical social media compositions',cap:'ACKitchen / Selected project'},
+    {img:A+'vitality-bloom/vitality-bloom-cover.webp',w:1536,h:1024,alt:'Vitality Bloom: Radiance Collagen Powder packaging on a stone surface',cap:'Vitality Bloom / Selected project'},
+    {img:A+'villa-unuk/villa-unuk-cover.jpg',w:2048,h:1152,alt:'Villa Unuk: brochure spreads mockup',cap:'Villa Unuk / Selected project'}];
   let ro=null,cur=-1;
   const isOpen=it=>{const t=it.querySelector('.framer-vq9pfq');return !!t&&t.getBoundingClientRect().height>40};
   function openIndex(items){const k=items.findIndex(isOpen);return k<0?(cur<0?0:cur):k}
@@ -967,7 +967,7 @@ function setPageMeta(m){
     if(EMAIL)contactItems.push('<li><a class="ft-a ft-row" href="mailto:'+EMAIL+'">'+ICON_MAIL+'<span>'+esc(EMAIL)+'</span></a></li>');
     if(WA)contactItems.push('<li><a class="ft-a ft-row" href="https://wa.me/'+WA+'" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp '+esc(WAD||WA)+' (opens in a new tab)">'+ICON_WA+'<span>'+esc(WAD||WA)+'</span></a></li>');
     if(PHONE)contactItems.push('<li><a class="ft-a" href="tel:'+tel+'" aria-label="Call '+PHONE+'">Phone</a></li>');
-    return '<div class="ft-col"><p class="ft-k">Studio</p><ul>'+link('Home','/')+link('Work','/','work')+link('About','/about')+'</ul></div>'
+    return '<div class="ft-col"><p class="ft-k">Studio</p><ul>'+link('Home','/')+link('Projects','/','work')+link('About','/about')+'</ul></div>'
       +'<div class="ft-col"><p class="ft-k">Services</p><ul>'+link('Social Media &amp; Content','/','services-social')+link('Campaigns &amp; Meta Advertising','/','services-campaigns')+link('SEO &amp; Digital Marketing','/','services-seo')+link('Branding &amp; Graphic Design','/','services-branding')+'</ul></div>'
       +'<div class="ft-col"><p class="ft-k">Contact</p><ul>'+contactItems.join('')+'</ul></div>';
   }
@@ -1267,7 +1267,7 @@ function setPageMeta(m){
   const reduce=()=>matchMedia('(prefers-reduced-motion: reduce)').matches;
   const HTML='<div class="wk-in">'
     +'<p class="wk-k">The archive / Selected case files</p>'
-    +'<div class="wk-row"><h1 class="wk-h">Work</h1>'
+    +'<div class="wk-row"><h1 class="wk-h">Projects</h1>'
     +'<div class="wk-r"><h2 class="wk-s">Different briefs. Different clues.</h2>'
     +'<p class="wk-p">From social media strategy and Meta campaigns to branding, packaging and editorial design. Different challenges, different approaches &mdash; each one worth a closer look.</p></div></div>'
     +'<a class="wk-go" href="#case-files">Explore the case files <span aria-hidden="true">&#8600;</span></a>'
