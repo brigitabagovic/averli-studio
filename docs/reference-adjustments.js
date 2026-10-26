@@ -13,11 +13,11 @@
    - privacyUrl:     optional link to a privacy page; leave empty if there is none.
    ===================================================================== */
 window.AVERLI_CONTACT={
-  email:"creativeaverlistudio@gmail.com",
+  email:"info@averlistudio.com",
   phone:"",
   whatsappNumber:"385919728684",
   whatsappDisplay:"+385 91 972 8684",
-  formEndpoint:"https://formsubmit.co/ajax/creativeaverlistudio@gmail.com",
+  formEndpoint:"https://formsubmit.co/ajax/info@averlistudio.com",
   privacyUrl:""
 };
 (() => {
@@ -1064,7 +1064,7 @@ function setPageMeta(m){
       if(!ENDPOINT){
         msg('This form isn’t connected yet, so your message could not be sent.'+(EMAIL?' Please email '+EMAIL+' instead.':''),true);return;
       }
-      data.append('_subject','New AVERLI case inquiry');data.append('_captcha','false');data.append('_template','table');
+      data.append('_subject','New project enquiry — AVERLI STUDIO');data.append('_replyto',String(data.get('email')||''));data.append('_captcha','false');data.append('_template','table');
       setBusy(true);msg('Sending your inquiry…');
       try{
         const res=await fetch(ENDPOINT,{method:'POST',body:data,headers:{Accept:'application/json'}});
