@@ -17,7 +17,7 @@ window.AVERLI_CONTACT={
   phone:"",
   whatsappNumber:"385919728684",
   whatsappDisplay:"+385 91 972 8684",
-  formEndpoint:"https://formsubmit.co/ajax/info@averlistudio.com",
+  formEndpoint:"https://forms.averlistudio.com/",
   privacyUrl:""
 };
 (() => {
