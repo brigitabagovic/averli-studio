@@ -970,7 +970,7 @@ function setPageMeta(m){
     return '<div class="ft-col"><p class="ft-k">Studio</p><ul>'+link('Home','/')+link('Projects','/','work')+link('About','/about')+'</ul></div>'
       +'<div class="ft-col"><p class="ft-k">Services</p><ul>'+link('Social Media &amp; Content','/','services-social')+link('Campaigns &amp; Meta Advertising','/','services-campaigns')+link('Web, UX &amp; SEO','/','services-seo')+link('Branding &amp; Graphic Design','/','services-branding')+'</ul></div>'
       +'<div class="ft-col"><p class="ft-k">Contact</p><ul>'+contactItems.join('')+'</ul></div>'
-      +'<div class="ft-legal"><a class="ft-a" href="'+BASE+'/privacy-policy/" data-averli-legal>Privacy Policy</a><a class="ft-a" href="'+BASE+'/cookie-policy/" data-averli-legal>Cookie Policy</a><button type="button" class="ft-a ft-btn" data-averli-consent-open>Cookie settings</button><span class="ft-id">ADRIATIC EMBEDDED (obrt), trading as AVERLI Studio · Soline 36A, 20207 Mlini, Croatia · MB 99317958 · OIB 59150178918 · info@averlistudio.com</span></div>';
+      +'<div class="ft-legal"><a class="ft-a" href="'+BASE+'/privacy-policy/" data-averli-legal>Privacy Policy</a><a class="ft-a" href="'+BASE+'/cookie-policy/" data-averli-legal>Cookie Policy</a><a class="ft-a" href="'+BASE+'/legal-notice/" data-averli-legal>Legal Notice</a><button type="button" class="ft-a ft-btn" data-averli-consent-open>Cookie settings</button></div>';
   }
   function footers(){
     document.querySelectorAll('footer').forEach(f=>{
