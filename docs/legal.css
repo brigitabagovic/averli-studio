@@ -1,0 +1,53 @@
+/* AVERLI STUDIO - legal pages (Privacy Policy, Cookie Policy). Matches the Contact page: white, #0d0d0d, Switzer stack, accent #7A1721. */
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#fff;color:#0d0d0d;font-family:Switzer,"Switzer Placeholder",Arial,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#0d0d0d}
+.lg-top{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:22px 48px;background:#0d0d0d}
+.lg-logo{display:block;font-size:14px;letter-spacing:1.6px;color:#F8F6F1}
+.lg-back{font-size:13px;letter-spacing:1.2px;text-transform:uppercase;color:#F8F6F1;text-decoration:none;border-bottom:1px solid #A8323F;padding-bottom:2px}
+.lg-back:hover{color:#fff}
+.lg-draft{margin:0;padding:14px 48px;background:#F8F6F1;border-bottom:1px solid #D6D0C9;font-size:14px;line-height:21px;color:#3b3b3b}
+.lg-draft strong{color:#7A1721;letter-spacing:1.1px;text-transform:uppercase;font-size:12px;margin-right:8px}
+.lg-ph{background:#FBEFD0;color:#0d0d0d;padding:0 4px;border-radius:2px;font-style:normal}
+.lg-main{max-width:1329px;margin:0 auto;padding:110px 48px 130px;display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);column-gap:96px}
+.lg-head{position:sticky;top:40px;align-self:start}
+.lg-k{margin:0 0 18px;font-size:13px;line-height:17px;letter-spacing:1.2px;text-transform:uppercase;color:#545454}
+.lg-h{margin:0;font-size:clamp(34px,3.9vw,56px);line-height:1.04;font-weight:300;letter-spacing:-.01em;text-transform:uppercase;text-wrap:balance}
+.lg-meta{margin:28px 0 0;font-size:14px;line-height:21px;color:#545454}
+.lg-toc{list-style:none;margin:34px 0 0;padding:22px 0 0;border-top:1px solid #D6D0C9}
+.lg-toc li{margin:0 0 8px}
+.lg-toc li::marker{content:""}
+.lg-toc a{font-size:14px;line-height:20px;color:#3b3b3b;text-decoration:none}
+.lg-toc a:hover,.lg-toc a:focus-visible{color:#7A1721}
+.lg-body{max-width:760px;min-width:0}
+.lg-body section{padding:0 0 46px;margin:0 0 46px;border-bottom:1px solid #D6D0C9;scroll-margin-top:30px}
+.lg-body section:last-of-type{border-bottom:0}
+.lg-body h2{margin:0 0 18px;font-size:13px;line-height:17px;letter-spacing:1.2px;text-transform:uppercase;color:#7A1721;font-weight:500}
+.lg-body h3{margin:26px 0 8px;font-size:19px;line-height:25px;font-weight:400;letter-spacing:.1px}
+.lg-body p,.lg-body li{font-size:16px;line-height:25px;letter-spacing:.2px;color:#333}
+.lg-body p{margin:0 0 14px}
+.lg-body ul{margin:0 0 14px;padding-left:20px}
+.lg-body li{margin:0 0 6px}
+.lg-body a{text-decoration:underline;text-decoration-color:#7A1721;text-underline-offset:3px;overflow-wrap:anywhere}
+.lg-body a:hover{color:#7A1721}
+.lg-tw{overflow-x:auto;margin:0 0 16px;border:1px solid #D6D0C9}
+.lg-table{width:100%;min-width:620px;border-collapse:collapse;font-size:14px;line-height:21px}
+.lg-table caption{text-align:left;padding:12px 14px;font-size:12px;letter-spacing:1.1px;text-transform:uppercase;color:#545454;background:#F8F6F1;border-bottom:1px solid #D6D0C9}
+.lg-table th,.lg-table td{padding:12px 14px;text-align:left;vertical-align:top;border-bottom:1px solid #E6E1DA;color:#333}
+.lg-table th{font-weight:500;color:#0d0d0d;background:#fff;font-size:12px;letter-spacing:1px;text-transform:uppercase}
+.lg-table tr:last-child td{border-bottom:0}
+.lg-btn{appearance:none;display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 20px;border:1px solid #0d0d0d;background:#fff;color:#0d0d0d;font:inherit;font-size:12px;letter-spacing:1.2px;text-transform:uppercase;cursor:pointer;border-radius:0}
+.lg-btn:hover{background:#0d0d0d;color:#fff}
+.lg-btn:focus-visible,.lg-back:focus-visible,.lg-toc a:focus-visible{outline:2px solid #7A1721;outline-offset:3px}
+.lg-foot{background:#0d0d0d;color:#BCBCBC;padding:34px 48px;display:flex;flex-wrap:wrap;gap:10px 30px;font-size:13px;line-height:18px}
+.lg-foot a,.lg-foot button{color:#BCBCBC;text-decoration:none;background:none;border:0;padding:0;font:inherit;cursor:pointer}
+.lg-foot a:hover,.lg-foot button:hover{color:#fff}
+.lg-foot span{margin-right:auto}
+@media(max-width:1000px){.lg-main{grid-template-columns:minmax(0,1fr);padding:70px 24px 90px;row-gap:46px}.lg-head{position:static}.lg-top,.lg-draft,.lg-foot{padding-left:24px;padding-right:24px}}
+.lg-nav{display:flex;align-items:center;gap:26px;flex-wrap:wrap}
+a.lg-logo{text-decoration:none}
+.lg-lang{font-size:13px;letter-spacing:1.2px;text-transform:uppercase;color:#F8F6F1;text-decoration:none;padding:6px 0}
+.lg-lang:hover{color:#fff;text-decoration:underline;text-decoration-color:#A8323F;text-underline-offset:4px}
+.lg-lang:focus-visible{outline:2px solid #A8323F;outline-offset:3px}
+.lg-body a[hreflang]{white-space:nowrap}

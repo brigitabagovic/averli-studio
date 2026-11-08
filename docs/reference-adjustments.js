@@ -18,7 +18,7 @@ window.AVERLI_CONTACT={
   whatsappNumber:"385919728684",
   whatsappDisplay:"+385 91 972 8684",
   formEndpoint:"https://forms.averlistudio.com/",
-  privacyUrl:""
+  privacyUrl:"/privacy-policy/"
 };
 (() => {
   const labels=['Brand identity','Digital design','Social content','Campaign creative','Print design','Art direction'];
@@ -853,9 +853,9 @@ if(!ACKITCHEN_PAGE_READY)document.addEventListener('click',e=>{const a=e.target.
   const A='/assets/';
   const STEPS=[
     {img:A+'averli-gyalaktika/00-home-cover-wide.webp',w:1672,h:941,alt:'Gyalaktika Zagreb: three smartphones showing the Meta ad creatives',cap:'Gyalaktika Zagreb / Selected project'},
-    {img:A+'ackitchen/ackitchen-cover.webp',w:1672,h:941,alt:'ACKitchen: four vertical social media compositions',cap:'ACKitchen / Selected project'},
-    {img:A+'vitality-bloom/vitality-bloom-cover.webp',w:1536,h:1024,alt:'Vitality Bloom: Radiance Collagen Powder packaging on a stone surface',cap:'Vitality Bloom / Selected project'},
-    {img:A+'villa-unuk/villa-unuk-cover.jpg',w:2048,h:1152,alt:'Villa Unuk: brochure spreads mockup',cap:'Villa Unuk / Selected project'}];
+    {img:A+'ackitchen/ackitchen-cover.webp',w:1672,h:941,alt:'ACKitchen: four vertical social media compositions',cap:'ACKitchen / Concept project'},
+    {img:A+'vitality-bloom/vitality-bloom-cover.webp',w:1536,h:1024,alt:'Vitality Bloom: Radiance Collagen Powder packaging on a stone surface',cap:'Vitality Bloom / Concept project'},
+    {img:A+'elysian-haven/elysian-haven-cover.webp',w:1672,h:941,alt:'Elysian Haven: hospitality brand identity concept',cap:'Elysian Haven / Concept project'}];
   let ro=null,cur=-1;
   const isOpen=it=>{const t=it.querySelector('.framer-vq9pfq');return !!t&&t.getBoundingClientRect().height>40};
   function openIndex(items){const k=items.findIndex(isOpen);return k<0?(cur<0?0:cur):k}
@@ -968,8 +968,9 @@ function setPageMeta(m){
     if(WA)contactItems.push('<li><a class="ft-a ft-row" href="https://wa.me/'+WA+'" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp '+esc(WAD||WA)+' (opens in a new tab)">'+ICON_WA+'<span>'+esc(WAD||WA)+'</span></a></li>');
     if(PHONE)contactItems.push('<li><a class="ft-a" href="tel:'+tel+'" aria-label="Call '+PHONE+'">Phone</a></li>');
     return '<div class="ft-col"><p class="ft-k">Studio</p><ul>'+link('Home','/')+link('Projects','/','work')+link('About','/about')+'</ul></div>'
-      +'<div class="ft-col"><p class="ft-k">Services</p><ul>'+link('Social Media &amp; Content','/','services-social')+link('Campaigns &amp; Meta Advertising','/','services-campaigns')+link('SEO &amp; Digital Marketing','/','services-seo')+link('Branding &amp; Graphic Design','/','services-branding')+'</ul></div>'
-      +'<div class="ft-col"><p class="ft-k">Contact</p><ul>'+contactItems.join('')+'</ul></div>';
+      +'<div class="ft-col"><p class="ft-k">Services</p><ul>'+link('Social Media &amp; Content','/','services-social')+link('Campaigns &amp; Meta Advertising','/','services-campaigns')+link('Web, UX &amp; SEO','/','services-seo')+link('Branding &amp; Graphic Design','/','services-branding')+'</ul></div>'
+      +'<div class="ft-col"><p class="ft-k">Contact</p><ul>'+contactItems.join('')+'</ul></div>'
+      +'<div class="ft-legal"><a class="ft-a" href="'+BASE+'/privacy-policy/" data-averli-legal>Privacy Policy</a><a class="ft-a" href="'+BASE+'/cookie-policy/" data-averli-legal>Cookie Policy</a><button type="button" class="ft-a ft-btn" data-averli-consent-open>Cookie settings</button><span class="ft-id">ADRIATIC EMBEDDED (obrt), trading as AVERLI Studio · Soline 36A, 20207 Mlini, Croatia · MB 99317958 · OIB 59150178918 · info@averlistudio.com</span></div>';
   }
   function footers(){
     document.querySelectorAll('footer').forEach(f=>{
@@ -996,13 +997,13 @@ function setPageMeta(m){
     if(s)s.querySelectorAll('.framer-l4p4on').forEach(col=>{
       const t=col.querySelector('.framer-1x2ayhb p');if(!t)return;
       const x=t.textContent.trim().toLowerCase();
-      const id=x.indexOf('social')===0?'services-social':x.indexOf('campaigns')===0?'services-campaigns':x.indexOf('seo')===0?'services-seo':x.indexOf('branding')===0?'services-branding':'';
+      const id=x.indexOf('social')===0?'services-social':x.indexOf('campaigns')===0?'services-campaigns':(x.indexOf('seo')===0||x.indexOf('web')===0)?'services-seo':x.indexOf('branding')===0?'services-branding':'';
       if(id&&col.id!==id)col.id=id;
     });
   }
 
   // ---------- contact page ----------
-  const OPTS=['Social Media & Content','Campaigns & Meta Advertising','SEO & Digital Marketing','Branding & Graphic Design','A Combination of Services','Not Sure Yet / Something Else'];
+  const OPTS=['Social Media & Content','Campaigns & Meta Advertising','Web, UX & SEO','Branding & Graphic Design','A Combination of Services','Not Sure Yet / Something Else'];
   const esc=s=>s.split('&').join('&amp;').split('<').join('&lt;').split('>').join('&gt;');
   const field=(id,label,req,inner)=>'<div class="ct-f" data-f="'+id+'"><label class="ct-l" for="ct-'+id+'">'+label+(req?'<span class="ct-req" aria-hidden="true">*</span>':'')+'</label>'+inner+'<p class="ct-err" id="ct-e-'+id+'" hidden></p></div>';
   const ICON_MAIL='<svg class="ct-ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg>';
@@ -1024,7 +1025,7 @@ function setPageMeta(m){
      +field('msg','Tell me about the case',true,'<textarea id="ct-msg" name="message" rows="5" required placeholder="The idea, the challenge, or whatever brought you here&hellip;" aria-describedby="ct-e-msg"></textarea>')
      +'<div class="ct-hp" aria-hidden="true"><label>Leave this field empty<input type="text" name="_gotcha" tabindex="-1" autocomplete="off"><input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></div>'
      +'</div><div class="ct-after"><div class="ct-act"><button class="ct-btn" type="submit"><span class="ct-bt">Send the case</span> <span class="ct-ba" aria-hidden="true">&#8599;</span></button>'
-     +'<p class="ct-note">Your details are used only to respond to your inquiry.'+(PRIVACY?' <a href="'+PRIVACY+'">Privacy</a>':'')+'</p></div>'
+     +'<p class="ct-note">Your name, email and message are sent by email to AVERLI Studio through our secure form relay (Cloudflare) and email provider (Resend), and used only to respond to your inquiry.'+(PRIVACY?' <a href="'+(PRIVACY.charAt(0)==='/'?BASE+PRIVACY:PRIVACY)+'" data-averli-legal>Privacy Policy</a>':'')+'</p></div>'
      +'<div class="ct-st" role="status" aria-live="polite"></div></div>'
      +'</form></div>'
      +'<div class="ct-direct">'+directBlock()+'</div>'
@@ -1070,6 +1071,7 @@ function setPageMeta(m){
         const res=await fetch(ENDPOINT,{method:'POST',body:data,headers:{Accept:'application/json'}});
         let body=null;try{body=await res.json();}catch(e){}
         if(res.ok&&body&&!(body.errors&&body.errors.length)&&body.success!==false&&body.success!=='false'&&(body.ok===true||body.success===true||body.success==='true'||body.next!==undefined)){
+          try{if(window.AverliTrack)AverliTrack.lead(String(data.get('service')||''));}catch(e){} /* analytics hook: inert unless the GA4 loader is enabled and consent given; cannot affect the sent message */
           const w=sec.querySelector('.ct-fw');
           w.innerHTML='<div class="ct-ok" tabindex="-1" role="status"><h2>Case received.</h2><p>Your message is in. I’ll take a closer look and get back to you.</p></div>';
           const ok=w.querySelector('.ct-ok');ok.focus({preventScroll:true});
@@ -1135,19 +1137,15 @@ function setPageMeta(m){
   const href=p=>BASE+p;
   const lnk=(p,txt)=>'<a class="ab-a" href="'+href(p)+'" data-ct-nav="'+p+'">'+txt+'</a>';
 
-  // moving strip: only the six published projects, each image taken from that project's own folder
+  // moving strip: only the four listed projects, each image taken from that project's own folder (Lastavica Cruising and Villa Unuk temporarily unlisted)
   const STRIP=[
     ['averli-gyalaktika/01-creative-training.webp','Gyalaktika Zagreb: Meta ad creative on a phone'],
     ['ackitchen/posts/post-01-graphic.webp','ACKitchen: Performance nutrition social post'],
     ['elysian-haven/grid/03_GREEN_DOORS_LOGO.webp','Elysian Haven: logo on a green door'],
-    ['lastavica/posts/06_LIFESTYLE_SUNDECK_SQUARE.webp','Lastavica Cruising: lifestyle social post'],
     ['vitality-bloom/vitality-bloom-cover.webp','Vitality Bloom: packaging on a stone surface'],
-    ['villa-unuk/mock/multi-spread.jpg','Villa Unuk: brochure spreads'],
     ['averli-gyalaktika/02-creative-new-group.webp','Gyalaktika Zagreb: second Meta ad creative'],
     ['ackitchen/posts/post-05-graphic.webp','ACKitchen: Nutrition is logistics social post'],
     ['elysian-haven/grid/07_GREEN_SHOPPING_BAG.webp','Elysian Haven: branded shopping bag'],
-    ['lastavica/story/stori-2.jpg','Lastavica Cruising: social story'],
-    ['villa-unuk/mock/marble-phone.jpg','Villa Unuk: brochure and phone on marble'],
     ['ackitchen/posts/post-04-photo.webp','ACKitchen: fresh produce photograph']];
   const stripHtml=(hidden)=>STRIP.map((s,i)=>'<figure class="ab-st"><img src="'+A+s[0]+'" alt="'+(hidden?'':s[1])+'" '+(hidden?'aria-hidden="true" ':'')+'draggable="false" '+(i<4&&!hidden?'':'loading="lazy" ')+'decoding="async"></figure>').join('');
 
@@ -1157,19 +1155,19 @@ function setPageMeta(m){
     ['03','Make the move','Once the direction is clear, the work begins. Thoughtful visuals, consistent communication and campaigns built around meaningful objectives.']];
 
   const WORK=[
-    ['ackitchen','ACKitchen','Social Media & Content','ackitchen/ackitchen-cover.webp','ACKitchen: four vertical social media compositions'],
+    ['ackitchen','ACKitchen','Social Media & Content · Concept','ackitchen/ackitchen-cover.webp','ACKitchen: four vertical social media compositions'],
     ['gyalaktika-zagreb','Gyalaktika Zagreb','Campaigns & Meta Advertising','averli-gyalaktika/00-home-cover-wide.webp','Gyalaktika Zagreb: three phones showing Meta ad creatives'],
-    ['vitality-bloom','Vitality Bloom','Branding & Graphic Design','vitality-bloom/vitality-bloom-cover.webp','Vitality Bloom: collagen powder packaging on a stone surface'],
-    ['villa-unuk','Villa Unuk','Editorial & Print Design','villa-unuk/mock/multi-spread.jpg','Villa Unuk: brochure spreads laid out on a surface']];
+    ['vitality-bloom','Vitality Bloom','Branding & Graphic Design · Concept','vitality-bloom/vitality-bloom-cover.webp','Vitality Bloom: collagen powder packaging on a stone surface'],
+    ['elysian-haven','Elysian Haven','Brand Identity · Concept','elysian-haven/elysian-haven-cover.webp','Elysian Haven: hospitality brand identity concept']];
 
   const AREAS=[
     ['Social Media & Content',['Social Media Management','Content Strategy','Content Planning','Content Creation','Social Media Design']],
     ['Campaigns & Meta Advertising',['Campaign Strategy','Facebook & Instagram Ads','Campaign Creatives','Audience Targeting','Campaign Optimisation']],
-    ['SEO & Digital Marketing',['SEO','Digital Marketing Strategy','Online Presence','Content Optimisation']],
+    ['Web, UX & SEO',['Website Design','UX Review','Landing Pages','SEO','Content Optimisation','Digital Marketing Strategy']],
     ['Branding & Graphic Design',['Brand Identity','Logo Design','Graphic Design','Digital Design','Packaging','Editorial & Print Design']]];
 
   const FAQ=[
-    ['What can AVERLI help me with?','AVERLI works across social media and content, campaigns and Meta advertising, SEO and digital marketing, and branding and graphic design. That can mean content planning and creation, Facebook and Instagram campaigns, search visibility and online presence, visual identities or design for digital and print.'],
+    ['What can AVERLI help me with?','AVERLI works across social media and content, campaigns and Meta advertising, websites, UX and SEO, and branding and graphic design. That can mean content planning and creation, Facebook and Instagram campaigns, website design and UX reviews, search visibility, visual identities or design for digital and print.'],
     ['Can I book just one service?','Absolutely. You can choose a single service or combine several, depending on what your brand needs. There’s no fixed package — we’ll shape the approach around your goals.'],
     ['Do I need to have a clear brief?','Not at all. A general idea, a challenge or even a question is enough to start the conversation. We can define the direction and requirements together.'],
     ['How does a project begin?','Start by sending an inquiry through the '+lnk('/contact','Contact page')+'. We’ll discuss your business, goals and what you need, then define a suitable scope and next steps.'],
@@ -1363,4 +1361,51 @@ function setPageMeta(m){
   function scan(){document.querySelectorAll('.averli-hero-film').forEach(f=>{if(!f.__hvSwitch)bind(f);});}
   MQ.addEventListener('change',()=>document.querySelectorAll('.averli-hero-film').forEach(f=>f.__hvSwitch&&f.__hvSwitch()));
   let t;new MutationObserver(()=>{cancelAnimationFrame(t);t=requestAnimationFrame(scan);}).observe(document.documentElement,{childList:true,subtree:true});scan();
+})();
+
+/* legal pages are static: always a full page load, never the single-page router */
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[data-averli-legal]');if(a&&!e.defaultPrevented&&e.button===0&&!e.metaKey&&!e.ctrlKey&&!e.shiftKey&&a.target!=='_blank'){e.preventDefault();e.stopPropagation();location.assign(a.href);}},true);
+
+
+// ===== 2026-11 credibility pass: unlisted projects, concept labels, Web/UX service name =====
+// HIDDEN projects are temporarily unlisted (cards, links and direct visits) until authorship/permission is confirmed.
+// CONCEPT projects get a visible "Concept" tag on cards and a status line under the title on their own page.
+(()=>{
+  const HIDDEN=['lastavica-cruising','villa-unuk'];
+  const CONCEPT={
+    'ackitchen':'',
+    'elysian-haven':'Concept project · a pre-opening brand identity concept. No client execution or results are claimed.',
+    'vitality-bloom':'Concept project · a design and campaign concept based on a supplied brief. Not a live product or website.'};
+  // a.href is the resolved address: after hydration the template rewrites case-page links to relative ones such as "./lastavica-cruising"
+  const slugOf=a=>{let p='';try{p=new URL(a.href,location.href).pathname}catch(e){}const m=p.match(/\/works\/([a-z0-9-]+)\/?$/);return m?m[1]:''};
+  const path=()=>location.pathname.replace(/\/+$/,'');
+  // direct visit to an unlisted case study: back to Works (the page also carries noindex)
+  if(HIDDEN.some(h=>path().endsWith('/works/'+h))){location.replace(path().replace(/\/works\/[a-z0-9-]+$/,'/works/'));return;}
+  const cardOf=a=>{let el=a;while(el.parentElement&&el.parentElement.children.length===1&&el.parentElement!==document.body)el=el.parentElement;return el};
+  function run(){
+    document.querySelectorAll('a[href]').forEach(a=>{
+      const s=slugOf(a);if(!s)return;
+      if(HIDDEN.includes(s)){let c=cardOf(a);
+        // a "Next Project" teaser: hide the whole teaser (label + link), not just the link
+        for(let k=0;k<6&&c.parentElement&&c.parentElement!==document.body;k++){const p=c.parentElement;if(/next project/i.test(p.textContent)&&p.textContent.length<400)c=p;else if(c!==cardOf(a))break;else if(!/next project/i.test(p.textContent))break;}
+        if(c.style.display!=='none'){c.style.display='none';c.setAttribute('data-av-hidden',s)}return;}
+      if(s in CONCEPT&&a.getBoundingClientRect().width>160&&a.getBoundingClientRect().height>120&&!a.querySelector('.av-concept')&&!a.closest('.ab-card')){
+        const t=document.createElement('span');t.className='av-concept';t.textContent='Concept';a.appendChild(t);
+        if(getComputedStyle(a).position==='static')a.style.position='relative';
+      }
+    });
+    // project page status line (ACKitchen already states its status at the top of the page)
+    const m=path().match(/\/works\/([a-z0-9-]+)$/);const line=m&&CONCEPT[m[1]];
+    if(line&&!document.querySelector('.av-status')){const h=document.querySelector('h1');if(h){const p=document.createElement('p');p.className='av-status';p.textContent=line;h.insertAdjacentElement('afterend',p)}}
+    // homepage service heading drawn by Framer
+    document.querySelectorAll('h1,h2,h3,h4,h5,h6,p').forEach(el=>{if(el.children.length===0&&el.textContent.trim()==='SEO & Digital Marketing')el.textContent='Web, UX & SEO'});
+    // pre-footer band image: Lastavica material replaced by AVERLI's own hero still (also if the Framer runtime re-renders it)
+    document.querySelectorAll('img[src*="lastavica-cruising-4"]').forEach(i=>{i.removeAttribute('srcset');i.src='/assets/hero-video-mobile-poster.webp'});
+    // the same band is also drawn by the template as a CSS background on a plain div
+    document.querySelectorAll('[style*="lastavica-cruising-4"]').forEach(e=>{e.style.backgroundImage='url("/assets/hero-video-mobile-poster.webp")'});
+    document.querySelectorAll('[data-averli-label="Online Presence"]').forEach(el=>{if(el.textContent.trim()==='Online Presence'){el.textContent='Website Design';el.setAttribute('data-averli-label','Website Design')}});
+  }
+  let q=0;const sched=()=>{if(q)return;q=requestAnimationFrame(()=>{q=0;run()})};
+  new MutationObserver(sched).observe(document.documentElement,{childList:true,subtree:true});
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',run);else run();
 })();

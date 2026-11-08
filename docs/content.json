@@ -46,48 +46,7 @@
     ],
     "reveal": "You’re already here."
   },
-  "projects": [
-    {
-      "id": "villa-unuk",
-      "name": "Villa Unuk",
-      "category": "Editorial & print design",
-      "year": "2024",
-      "summary": "Architecture, translated into print.",
-      "description": "An editorial sales brochure for a residential development in Primošten. Architectural imagery, carefully paced layouts, and clear information bring the property’s character onto the page.",
-      "scope": [
-        "Brochure design",
-        "Editorial layout",
-        "Print design"
-      ],
-      "cover": "assets/villa-unuk-1.jpg",
-      "images": [
-        "assets/villa-unuk-1.jpg",
-        "assets/villa-unuk-2.jpg",
-        "assets/villa-unuk-3.jpg",
-        "assets/villa-unuk-4.jpg"
-      ]
-    },
-    {
-      "id": "lastavica",
-      "name": "Lastavica Cruising",
-      "category": "Social media & content",
-      "year": "2023",
-      "summary": "A considered presence, on and off the water.",
-      "description": "Creative direction and social media design for an Adriatic yacht charter. A cohesive visual language and content plan connect the atmosphere of the experience with its digital presence.",
-      "scope": [
-        "Creative direction",
-        "Social media design",
-        "Content planning"
-      ],
-      "cover": "assets/lastavica-1.png",
-      "images": [
-        "assets/lastavica-1.png",
-        "assets/lastavica-2.jpg",
-        "assets/lastavica-3.png",
-        "assets/lastavica-4.png"
-      ]
-    }
-  ],
+  "projects": [],
   "services": [
     {
       "title": "Social Media & Content",

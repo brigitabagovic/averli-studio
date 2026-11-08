@@ -928,3 +928,22 @@ main.wk-main>.framer-jdylyk{display:none!important}
 /* Project-focus row: a 3-line value is taller than the 66px row and was clipped at the top; let it show */
 .framer-x4v1be-container .framer-YviN2{overflow:visible!important}
 .framer-x4v1be-container .framer-zqvrel{overflow:visible!important}
+
+.ft-legal{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 30px;padding-top:26px;margin-top:4px;border-top:1px solid rgba(255,255,255,.14)}
+.ft-legal .ft-a{font-size:13px;line-height:18px;color:#BCBCBC}
+.ft-legal .ft-a:hover,.ft-legal .ft-a:focus-visible{color:#fff}
+.ft-id{font-size:13px;line-height:18px;color:#BCBCBC}
+
+/* 2026-11 credibility pass */
+.av-concept{position:absolute;top:12px;left:12px;z-index:5;padding:5px 10px;background:rgba(14,14,15,.82);color:#F8F6F1;font:600 11px/1 Switzer,sans-serif;letter-spacing:.14em;text-transform:uppercase;border-radius:2px;pointer-events:none}
+.av-status{margin:16px 0 0;font:400 16px/1.5 Switzer,sans-serif;color:#D6D3CD;max-width:640px}
+
+/* Phones: the desktop menu variant is shown at all widths; stack the wordmark above the four links so they never overlap */
+@media(max-width:809px){
+ nav.framer-b6KOt .framer-695lda{flex-wrap:wrap!important;row-gap:12px}
+ nav.framer-b6KOt .framer-1jvtfj5,nav.framer-b6KOt .framer-10ijs4{flex:1 1 100%!important;width:100%!important}
+ nav.framer-b6KOt .framer-10ijs4{justify-content:space-between!important;gap:8px!important}
+}
+
+/* Cookie settings button in the footer legal row */
+.ft-btn{background:none;border:0;padding:1px 0;font-family:inherit;cursor:pointer}
