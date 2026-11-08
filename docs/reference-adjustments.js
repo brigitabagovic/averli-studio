@@ -1400,9 +1400,6 @@ document.addEventListener('click',function(e){var a=e.target.closest&&e.target.c
     // homepage service heading drawn by Framer
     document.querySelectorAll('h1,h2,h3,h4,h5,h6,p').forEach(el=>{if(el.children.length===0&&el.textContent.trim()==='SEO & Digital Marketing')el.textContent='Web, UX & SEO'});
     // pre-footer band image: Lastavica material replaced by AVERLI's own hero still (also if the Framer runtime re-renders it)
-    document.querySelectorAll('img[src*="lastavica-cruising-4"]').forEach(i=>{i.removeAttribute('srcset');i.src='/assets/hero-video-mobile-poster.webp'});
-    // the same band is also drawn by the template as a CSS background on a plain div
-    document.querySelectorAll('[style*="lastavica-cruising-4"]').forEach(e=>{e.style.backgroundImage='url("/assets/hero-video-mobile-poster.webp")'});
     document.querySelectorAll('[data-averli-label="Online Presence"]').forEach(el=>{if(el.textContent.trim()==='Online Presence'){el.textContent='Website Design';el.setAttribute('data-averli-label','Website Design')}});
   }
   let q=0;const sched=()=>{if(q)return;q=requestAnimationFrame(()=>{q=0;run()})};
